@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoice", "Invoice.csproj", "{8B6046FE-F87D-4D10-87A4-7C9193C4CD60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{419BFB71-D44E-43BC-83AC-4538917E9101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B6046FE-F87D-4D10-87A4-7C9193C4CD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6046FE-F87D-4D10-87A4-7C9193C4CD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6046FE-F87D-4D10-87A4-7C9193C4CD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6046FE-F87D-4D10-87A4-7C9193C4CD60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419BFB71-D44E-43BC-83AC-4538917E9101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419BFB71-D44E-43BC-83AC-4538917E9101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419BFB71-D44E-43BC-83AC-4538917E9101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419BFB71-D44E-43BC-83AC-4538917E9101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

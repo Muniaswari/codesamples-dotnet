@@ -1,0 +1,86 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A338349-1D93-49ED-B6F2-F8A9F1C2AFD1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdaptivePayments</RootNamespace>
+    <AssemblyName>AdaptivePayments</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Packages\log4net\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPalAdaptivePaymentsSDK, Version=2.1.96.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Packages\PayPalAdaptivePaymentsSDK\lib\PayPalAdaptivePaymentsSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPalCoreSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Packages\PayPalCoreSDK\lib\PayPalCoreSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvertCurrencySample.cs" />
+    <Compile Include="ExecutePaymentSample.cs" />
+    <Compile Include="GetPaymentOptionsSample.cs" />
+    <Compile Include="PaymentDetailsSample.cs" />
+    <Compile Include="PaySample.cs" />
+    <Compile Include="PreapprovalDetailsSample.cs" />
+    <Compile Include="PreapprovalSample.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RefundSample.cs" />
+    <Compile Include="SetPaymentOptionsSample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Packages\log4net\log4net.nupkg" />
+    <None Include="Packages\PayPalAdaptivePaymentsSDK\PayPalAdaptivePaymentsSDK.nupkg" />
+    <None Include="Packages\PayPalCoreSDK\PayPalCoreSDK.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Packages\log4net\lib\1.0\log4net.dll" />
+    <Content Include="Packages\log4net\lib\1.0\log4net.xml" />
+    <Content Include="Packages\log4net\lib\1.1\log4net.dll" />
+    <Content Include="Packages\log4net\lib\1.1\log4net.xml" />
+    <Content Include="Packages\log4net\lib\2.0\log4net.dll" />
+    <Content Include="Packages\log4net\lib\2.0\log4net.xml" />
+    <Content Include="Packages\PayPalAdaptivePaymentsSDK\lib\PayPalAdaptivePaymentsSDK.dll" />
+    <Content Include="Packages\PayPalCoreSDK\lib\PayPalCoreSDK.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

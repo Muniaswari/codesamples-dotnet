@@ -1,0 +1,82 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C6492B6-CEC7-435F-8494-405B2E28DC9D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Merchant</RootNamespace>
+    <AssemblyName>Merchant</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Packages\log4net\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPalCoreSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Packages\PayPalCoreSDK\lib\PayPalCoreSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPalMerchantSDK, Version=2.1.96.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Packages\PayPalMerchantSDK\lib\PayPalMerchantSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateRecurringPaymentsProfileSample.cs" />
+    <Compile Include="DoAuthorizationSample.cs" />
+    <Compile Include="DoCaptureSample.cs" />
+    <Compile Include="DoDirectPaymentSample.cs" />
+    <Compile Include="DoExpressCheckoutPaymentSample.cs" />
+    <Compile Include="DoReauthorizationSample.cs" />
+    <Compile Include="DoReferenceTransactionSample.cs" />
+    <Compile Include="DoVoidSample.cs" />
+    <Compile Include="GetTransactionDetailsSample.cs" />
+    <Compile Include="MassPaySample.cs" />
+    <Compile Include="GetBalanceSample.cs" />
+    <Compile Include="GetExpressCheckoutDetailsSample.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RefundTransactionSample.cs" />
+    <Compile Include="SetExpressCheckoutSample.cs" />
+    <Compile Include="TransactionSearchSample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Packages\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

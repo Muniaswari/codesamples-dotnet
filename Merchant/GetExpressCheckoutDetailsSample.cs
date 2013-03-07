@@ -1,0 +1,96 @@
+// # Namespaces  
+using System;
+using System.Collections.Generic;
+// # NuGet Install          
+// Visual Studio 2012 and 2010 Command:  
+// Install-Package PayPalMerchantSDK        
+// Visual Studio 2005 and 2008 (NuGet.exe) Command:   
+// install PayPalMerchantSDK      
+using PayPal.PayPalAPIInterfaceService;
+using PayPal.PayPalAPIInterfaceService.Model;
+using log4net;
+
+// # Sample for GetExpressCheckoutDetails API   
+// The GetExpressCheckoutDetails API operation obtains information about
+// an Express Checkout transaction.
+// This sample code uses Merchant .NET SDK to make API call. You can
+// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+public class GetExpressCheckoutDetailsSample
+{
+    // # Static constructor for configuration setting
+    static GetExpressCheckoutDetailsSample()
+    {
+        // Load the log4net configuration settings from Web.config or App.config    
+        log4net.Config.XmlConfigurator.Configure();
+    }
+
+    // Logs output statements, errors, debug info to a text file
+    private static ILog logger = LogManager.GetLogger(typeof(SetExpressCheckoutSample));
+  
+    // # GetExpressCheckout API Operation
+    // The GetExpressCheckoutDetails API operation obtains information about an Express Checkout transaction
+    public GetExpressCheckoutDetailsResponseType GetExpressCheckoutDetailsAPIOperation()
+    {
+        // Create the GetExpressCheckoutDetailsResponseType object
+        GetExpressCheckoutDetailsResponseType responseGetExpressCheckoutDetailsResponseType = new GetExpressCheckoutDetailsResponseType();
+
+        try
+        {
+            // Create the GetExpressCheckoutDetailsReq object
+            GetExpressCheckoutDetailsReq getExpressCheckoutDetails = new GetExpressCheckoutDetailsReq();
+
+            // A timestamped token, the value of which was returned by `SetExpressCheckout` response
+            GetExpressCheckoutDetailsRequestType getExpressCheckoutDetailsRequest = new GetExpressCheckoutDetailsRequestType("EC-11U13522TP7143059");
+            getExpressCheckoutDetails.GetExpressCheckoutDetailsRequest = getExpressCheckoutDetailsRequest;
+
+            // Create the service wrapper object to make the API call
+            PayPalAPIInterfaceServiceService service = new PayPalAPIInterfaceServiceService();
+
+            // # API call
+            // Invoke the GetExpressCheckoutDetails method in service wrapper object
+            responseGetExpressCheckoutDetailsResponseType = service.GetExpressCheckoutDetails(getExpressCheckoutDetails);
+
+            if (responseGetExpressCheckoutDetailsResponseType != null)
+            {
+                // Response envelope acknowledgement
+                string acknowledgement = "GetExpressCheckoutDetails API Operation - ";
+                acknowledgement += responseGetExpressCheckoutDetailsResponseType.Ack.ToString();
+                logger.Info(acknowledgement + "\n");
+                Console.WriteLine(acknowledgement + "\n");
+
+                // # Success values
+                if (responseGetExpressCheckoutDetailsResponseType.Ack.ToString().Trim().ToUpper().Equals("SUCCESS"))
+                {
+                    // Unique PayPal Customer Account identification number. This
+                    // value will be null unless you authorize the payment by
+                    // redirecting to PayPal after `SetExpressCheckout` call.
+                    logger.Info("Payer ID : " + responseGetExpressCheckoutDetailsResponseType.GetExpressCheckoutDetailsResponseDetails.PayerInfo.PayerID + "\n");
+                    Console.WriteLine("Payer ID : " + responseGetExpressCheckoutDetailsResponseType.GetExpressCheckoutDetailsResponseDetails.PayerInfo.PayerID + "\n");
+
+                }
+                // # Error Values
+                else
+                {
+                    List<ErrorType> errorMessages = responseGetExpressCheckoutDetailsResponseType.Errors;
+                    foreach (ErrorType error in errorMessages)
+                    {
+                        logger.Debug("API Error Message : " + error.LongMessage);
+                        Console.WriteLine("API Error Message : " + error.LongMessage + "\n");
+                    }
+                }
+            }
+        }
+        // # Exception log    
+        catch (System.Exception ex)
+        {
+            // Log the exception message       
+            logger.Debug("Error Message : " + ex.Message);
+            Console.WriteLine("Error Message : " + ex.Message);
+        }
+        return responseGetExpressCheckoutDetailsResponseType;
+    }
+
+    
+}
+
+
