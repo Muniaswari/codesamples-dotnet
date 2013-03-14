@@ -14,7 +14,7 @@ using log4net;
 // # Sample for SearchInvoices API  
 // Use the SearchInvoice API operation to search an invoice.
 // This sample code uses Invoice .NET SDK to make API call. You can
-// the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/invoice-sdk/dotnet)
 public class SearchInvoicesSample
 {
     // # Static constructor for configuration setting

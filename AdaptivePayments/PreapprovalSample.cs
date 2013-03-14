@@ -23,7 +23,7 @@ using log4net;
 // * whether or not a PIN is required for each payment request.
 //
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDK [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDK [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class PreapprovalSample
 {
     // # Static constructor for configuration setting

@@ -14,7 +14,7 @@ using log4net;
 // # Sample for SetPaymentOptions API   
 // You use the SetPaymentOptions API operation to specify settings for a payment of the actionType `CREATE`. This actionType is specified in the PayRequest message.
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDK [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDK [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class SetPaymentOptionsSample
 {
     // # Static constructor for configuration setting 

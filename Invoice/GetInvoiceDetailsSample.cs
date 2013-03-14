@@ -14,7 +14,7 @@ using log4net;
 // # Sample for GetInvoiceDetails API   
 // Use the GetInvoiceDetails API operation to get detailed information about an invoice.
 // This sample code uses Invoice .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/invoice-sdk/dotnet)
 public class GetInvoiceDetailsSample
 {
     // # Static constructor for configuration setting

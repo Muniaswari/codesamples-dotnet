@@ -14,7 +14,7 @@ using log4net;
 // # Sample for Refund API 
 // Use the Refund API operation to refund all or part of a payment.
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDK [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDK [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class RefundSample
 {
     // # Static constructor for configuration setting

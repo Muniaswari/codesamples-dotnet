@@ -14,7 +14,7 @@ using log4net;
 // # Sample for SendInvoice API     
 // Use the SendInvoice API operation to send an invoice to a payer, and notify the payer of the pending invoice.
 // This sample code uses Invoice .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/invoice-sdk/dotnet)
 public class SendInvoiceSample
 {
     // # Static constructor for configuration setting

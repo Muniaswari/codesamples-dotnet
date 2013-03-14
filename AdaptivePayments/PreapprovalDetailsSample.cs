@@ -14,7 +14,7 @@ using log4net;
 // # Sample for PreapprovalDetails API  
 // Use the PreapprovalDetails API operation to obtain information about an agreement between you and a sender for making payments on the sender's behalf.
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class PreapprovalDetailsSample
 {
     // # Static constructor for configuration setting

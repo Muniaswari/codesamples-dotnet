@@ -14,7 +14,7 @@ using log4net;
 // # Sample for PaymentDetails API  
 // Use the PaymentDetails API operation to obtain information about a payment. You can identify the payment by your tracking ID, the PayPal transaction ID in an IPN message, or the pay key associated with the payment.
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDK [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDK [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class PaymentDetailsSample
 {
     // # Static constructor for configuration setting

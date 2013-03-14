@@ -15,7 +15,7 @@ using log4net;
 // payment.
 // This sample code uses Merchant .NET SDK to make API call. You can
 // download the SDKs
-// [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// [here](https://github.com/paypal/sdk-packages/tree/gh-pages/merchant-sdk/dotnet)
 public class DoDirectPaymentSample
 {
     // # Static constructor for configuration setting

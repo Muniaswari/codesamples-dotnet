@@ -24,7 +24,7 @@ using log4net;
 // agreement. For version 54.0 and later, use SetExpressCheckout to initiate
 // creation of a billing agreement.`
 // This sample code uses Merchant .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/merchant-sdk/dotnet)
 public class CreateRecurringPaymentsProfileSample
 {
     // # Static constructor for configuration setting

@@ -14,7 +14,7 @@ using log4net;
 // # Sample for GetPaymentOptions API 
 // You use the GetPaymentOptions API operation to retrieve the payment options passed with the SetPaymentOptionsRequest.
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDK [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDK [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class GetPaymentOptionsSample
 {
     // # Static constructor for configuration setting

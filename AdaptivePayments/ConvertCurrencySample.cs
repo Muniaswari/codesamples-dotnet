@@ -14,7 +14,7 @@ using log4net;
 // # Sample for ConvertCurrency API 
 // Use the ConvertCurrency API operation to request the current foreign exchange (FX) rate for a specific amount and currency.
 // This sample code uses AdaptivePayments .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/adaptivepayments-sdk/dotnet)
 public class ConvertCurrencySample
 {
     // # Static constructor for configuration setting

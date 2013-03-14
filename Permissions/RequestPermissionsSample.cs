@@ -14,7 +14,7 @@ using log4net;
 // # Sample for RequestPermissions API  
 // Use the RequestPermissions API operation to request permissions to execute API operations on a PayPal account holder's behalf.
 // This sample code uses Permissions .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/permissions-sdk/dotnet)
 public class RequestPermissionsSample
 {
     // # Static constructor for configuration setting

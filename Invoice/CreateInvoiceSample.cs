@@ -14,7 +14,7 @@ using log4net;
 // # Sample for CreateInvoice API   
 // Use the CreateInvoice API operation to create a new invoice. The call includes merchant, payer, and API caller information, in addition to invoice detail. The response to the call contains an invoice ID and URL.
 // This sample code uses Invoice .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/invoice-sdk/dotnet)
 public class CreateInvoiceSample
 {
     // # Static constructor for configuration setting

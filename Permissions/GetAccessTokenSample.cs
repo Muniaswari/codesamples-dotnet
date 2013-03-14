@@ -14,7 +14,7 @@ using log4net;
 // # Sample for GetAccessToken API  
 // Use the GetAccessToken API operation to obtain an access token for a set of permissions.
 // This sample code uses Permissions .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/permissions-sdk/dotnet)
 public class GetAccessTokenSample
 {
     // # Static constructor for configuration setting

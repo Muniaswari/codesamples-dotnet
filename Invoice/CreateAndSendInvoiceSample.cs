@@ -14,7 +14,7 @@ using log4net;
 // # Sample for CreateAndSendInvoice API    
 // Use the CreateAndSendInvoice API operation to create and send an invoice.
 // This sample code uses Invoice .NET SDK to make API call. You can
-// download the SDKs [here](https://www.x.com/developers/paypal/documentation-tools/paypal-sdk-index)
+// download the SDKs [here](https://github.com/paypal/sdk-packages/tree/gh-pages/invoice-sdk/dotnet)
 public class CreateAndSendInvoiceSample
 {
     // # Static constructor for configuration setting
