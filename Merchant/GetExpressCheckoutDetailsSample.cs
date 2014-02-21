@@ -25,7 +25,7 @@ public class GetExpressCheckoutDetailsSample
     }
 
     // Logs output statements, errors, debug info to a text file
-    private static ILog logger = LogManager.GetLogger(typeof(SetExpressCheckoutSample));
+    private static ILog logger = LogManager.GetLogger(typeof(GetExpressCheckoutDetailsSample));
   
     // # GetExpressCheckout API Operation
     // The GetExpressCheckoutDetails API operation obtains information about an Express Checkout transaction
